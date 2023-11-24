@@ -1,0 +1,17 @@
+<article class="search__container">
+  <h1 class="search__title">Personajes encontrados</h1>
+  <div class="search__button-cont">
+    <button class="search__button" (click)="goBack()">Regresar</button>
+  </div>
+  <div *ngIf="!characters">
+    <p class="search__paragraph">Cargando...</p>
+  </div>
+  <div *ngIf="characters.length == 0">
+    <p class="search__paragraph">No hay personajes con ese nombre</p>
+  </div>
+  <ul class="search__list">
+    <li [routerLink]="['/detail', character.id]" class="search__list-item" *ngFor="let character of characters">
+      <app-character-card [data]="character"></app-character-card>
+    </li>
+  </ul>
+</article>

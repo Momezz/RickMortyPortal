@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,400&display=swap');
+
+.header__container {
+  background-image: url('https://res.cloudinary.com/dgouwu7h7/image/upload/v1700432154/dataFiles/23274d6f1e3dccec532909df97188f5e.png');
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.header__title {
+  background-color: rgba(0, 0, 0, 0.428);
+  font-family: 'Tourney', sans-serif;
+  text-shadow: 2px 2px 2px #9ACB21;
+  text-align: center;
+  font-weight: 400;
+  color: #02C1D8;
+  font-size: 66px;
+  padding: 10px;
+}
+
+@media(min-width: 1200px) {
+  .header__container {
+    background-image: url('https://res.cloudinary.com/dgouwu7h7/image/upload/v1700436456/dataFiles/24ce16cd56bb73bb1ca25c5f17f7a551.png');
+  }
+}

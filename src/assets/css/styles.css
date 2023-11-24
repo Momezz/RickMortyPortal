@@ -1,0 +1,50 @@
+body {
+  background-color: #040404;
+  height: 100%;
+}
+
+.home__container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.home__search {
+  width: 100%;
+  margin-top: 20px;
+  max-width: 768px;
+  height: 100%;
+}
+
+.home__card-grid {
+  border-top: 20px solid transparent;
+  overflow: auto;
+  height: 500px;
+  
+}
+
+@media(min-width: 1040px) {
+  .home__container {
+    flex-direction: row-reverse;
+  }
+
+  .home__search {
+    margin: 20px;
+    width: 30%;
+  }
+
+  .home__card-grid {
+    width: 80%;
+  }
+
+  .home__card-grid::-webkit-scrollbar {
+    background-color:#00B2CB;
+    width: 10px;
+  }
+
+  .home__card-grid::-webkit-scrollbar-thumb {
+    background-color: #336268;
+  }
+}

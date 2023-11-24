@@ -1,0 +1,30 @@
+<article class="character-detail__container">
+  <div class="character-detail__subcontainer">
+    <h2><span class="character-detail__span">Nombre: </span>{{ character.name }}</h2>
+    <img
+      class="character-detail__image"
+      [src]="character.image"
+      alt="Personaje"
+    />
+    <button class="character-detail__link" (click)="goBack()">Regresar</button>
+  </div>
+  <div class="character-detail__subcontainer">
+    <p class="character-detail__text">
+      <span class="character-detail__span">Estado: </span>{{ character.status }}
+    </p>
+    <p class="character-detail__text">
+      <span class="character-detail__span">Especie:</span>
+      {{ character.species }}
+    </p>
+    <p class="character-detail__text">
+      <span class="character-detail__span">Gender: </span>{{ character.gender }}
+    </p>
+    <p class="character-detail__text">
+      <span class="character-detail__span">Origin: </span
+      >{{ character.origin.name }}
+    </p>
+    <p class="character-detail__text">
+      Aparece en {{ character.episode.length }} episodios
+    </p>
+  </div>
+</article>

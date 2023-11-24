@@ -1,0 +1,8 @@
+<aside class="search__container">
+  <h3 class="search__title">Buscador</h3>
+  <p class="search__paragraph">Encuentra el personaje que más te gusta</p>
+  <form #searchForm="ngForm" (ngSubmit)="goSearch()" class="search__form-container">
+    <input class="search__input" type="text" name="search" [(ngModel)]="searchString" />
+    <input class="search__button" type="submit" name="submit" value="Buscar" />
+  </form>
+</aside>

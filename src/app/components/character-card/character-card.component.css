@@ -1,0 +1,32 @@
+.card__container {
+  border: 5px solid #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 14px;
+  display: flex;
+}
+
+.card__subcontainer {
+  margin: 4px;
+  width: 95%;
+}
+
+.card__title {
+  border: 1px solid #FFFFFF;
+  height: 70px;
+  padding: 5px;
+}
+
+.card__noun {
+  color: gray;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__text {
+  font-size: 14PX;
+  margin: 3px;
+}

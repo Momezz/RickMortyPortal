@@ -1,0 +1,7 @@
+<article class="card-display__container">
+  <ul class="card-display__list">
+    <li [routerLink]="['/detail', character.id]" class="card-display__list-item" *ngFor="let character of characters">
+      <app-character-card [data]="character"></app-character-card>
+    </li>
+  </ul>
+</article>
